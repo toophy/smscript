@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\nono">
+      <UniqueIdentifier>{6de34da4-f1d7-41b2-a160-cb5767cae739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\nono\check">
+      <UniqueIdentifier>{4506ed8e-7ec2-4162-878e-423de8ab6713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\nono\effect">
+      <UniqueIdentifier>{721940ad-8509-45b7-9119-bb2f0c357e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TinyXml2">
+      <UniqueIdentifier>{d87120a9-abbc-48ec-ab21-3d63c6cb8829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\LslScript">
+      <UniqueIdentifier>{60aa97e8-9478-4fb3-8806-6f6b7f4ea8d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="attr_sys.h">
+      <Filter>源文件\nono</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedPtr.h">
+      <Filter>源文件\nono</Filter>
+    </ClInclude>
+    <ClInclude Include="skill_process.h">
+      <Filter>源文件\nono</Filter>
+    </ClInclude>
+    <ClInclude Include="role_agent.h">
+      <Filter>源文件\nono</Filter>
+    </ClInclude>
+    <ClInclude Include="fight_base.h">
+      <Filter>源文件\nono</Filter>
+    </ClInclude>
+    <ClInclude Include="check_attr_limit.h">
+      <Filter>源文件\nono\check</Filter>
+    </ClInclude>
+    <ClInclude Include="effect_attr_change.h">
+      <Filter>源文件\nono\effect</Filter>
+    </ClInclude>
+    <ClInclude Include="TinyXml2\tinyxml2.h">
+      <Filter>TinyXml2</Filter>
+    </ClInclude>
+    <ClInclude Include="lsl_script.h">
+      <Filter>源文件\LslScript</Filter>
+    </ClInclude>
+    <ClInclude Include="lsl_config.h">
+      <Filter>源文件\LslScript</Filter>
+    </ClInclude>
+    <ClInclude Include="lsl_function.h">
+      <Filter>源文件\LslScript</Filter>
+    </ClInclude>
+    <ClInclude Include="lsl_param.h">
+      <Filter>源文件\LslScript</Filter>
+    </ClInclude>
+    <ClInclude Include="lsl_app.h">
+      <Filter>源文件\LslScript</Filter>
+    </ClInclude>
+    <ClInclude Include="readme.h">
+      <Filter>源文件\LslScript</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fightsys.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="attr_sys.cpp">
+      <Filter>源文件\nono</Filter>
+    </ClCompile>
+    <ClCompile Include="skill_process.cpp">
+      <Filter>源文件\nono</Filter>
+    </ClCompile>
+    <ClCompile Include="role_agent.cpp">
+      <Filter>源文件\nono</Filter>
+    </ClCompile>
+    <ClCompile Include="fight_base.cpp">
+      <Filter>源文件\nono</Filter>
+    </ClCompile>
+    <ClCompile Include="check_attr_limit.cpp">
+      <Filter>源文件\nono\check</Filter>
+    </ClCompile>
+    <ClCompile Include="effect_attr_change.cpp">
+      <Filter>源文件\nono\effect</Filter>
+    </ClCompile>
+    <ClCompile Include="TinyXml2\tinyxml2.cpp">
+      <Filter>TinyXml2</Filter>
+    </ClCompile>
+    <ClCompile Include="lsl_script.cpp">
+      <Filter>源文件\LslScript</Filter>
+    </ClCompile>
+    <ClCompile Include="lsl_config.cpp">
+      <Filter>源文件\LslScript</Filter>
+    </ClCompile>
+    <ClCompile Include="lsl_function.cpp">
+      <Filter>源文件\LslScript</Filter>
+    </ClCompile>
+    <ClCompile Include="lsl_app.cpp">
+      <Filter>源文件\LslScript</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
