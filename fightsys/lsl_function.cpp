@@ -22,7 +22,7 @@ Lsl_AppPtr  Lsl_Func::GetMyApp()
 bool Lsl_Func::LoadFromString(std::string s)
 {
 	Lsl_FN_Call* x = new Lsl_FN_Call();
-	x->LoadFromString("");
+	x->LoadFromString(s);
 	Lsl_FNPtr fn = std::shared_ptr<Lsl_FN_Call>(x);
 	m_Nodes = fn;
 	m_Stack.push_back(fn);
@@ -70,10 +70,18 @@ Lsl_FN_Call::~Lsl_FN_Call()
 }
 bool Lsl_FN_Call::LoadFromString(std::string s)
 {
-	m_FuncName = "Print";
-	m_Params = Lsl_ParamPtr(new Lsl_Param);
-	m_Params->m_Strings.m_StringMap.insert(std::map<std::string, int>::value_type("msg", 1));
-	m_Params->m_Strings.m_Strings.push_back("ÄãºÃ");
+	if (s == "Eat") {
+		m_FuncName = "Sleep";
+		m_Params = Lsl_ParamPtr(new Lsl_Param);
+		m_Params->m_Strings.m_StringMap.insert(std::map<std::string, int>::value_type("msg", 1));
+		m_Params->m_Strings.m_Strings.push_back("ÄãºÃ");
+	}
+	else {
+		m_FuncName = "Print";
+		m_Params = Lsl_ParamPtr(new Lsl_Param);
+		m_Params->m_Strings.m_StringMap.insert(std::map<std::string, int>::value_type("msg", 1));
+		m_Params->m_Strings.m_Strings.push_back("ÄãºÃ");
+	}
 	return true;
 }
 

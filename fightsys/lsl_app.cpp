@@ -50,6 +50,30 @@ bool Lsl_App::CallFunc(std::string func_name, Lsl_ParamPtr params)
 	if (it != m_HostFuns.end()) {
 		(this->*(it->second))(params);
 	}
+	else {
+		// º¯ÊýÕ»Ôö¼Ó
+		Lsl_FuncPtr fp = GetLslConfig()->GetFunc(func_name);
+		if (!fp) {
+			return false;
+		}
+
+		CallStack x;
+
+		x.scriptFunc = fp;
+		x.params = params;
+
+		Lsl_AppPtr pThis = GetPtr();
+		fp->SetMyApp(pThis);
+		fp->SetParams(params);
+
+		m_FuncStack.push_back(x);
+
+		fp->Run();
+
+		m_FuncStack.pop_back();
+
+		return true;
+	}
 	return false;
 }
 

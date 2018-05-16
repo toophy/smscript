@@ -29,7 +29,13 @@ bool Lsl_Config::LoadConfigFromString(std::string s)
 	std::string func_name = "Eat";
 	Lsl_FuncPtr pf = Lsl_FuncPtr(new Lsl_Func);
 	m_Funcs.insert(FuncMap::value_type(func_name, pf));
-	pf->LoadFromString("");
+	pf->LoadFromString("Eat");
+
+
+	std::string func_name2 = "Sleep";
+	Lsl_FuncPtr pf2 = Lsl_FuncPtr(new Lsl_Func);
+	m_Funcs.insert(FuncMap::value_type(func_name2, pf2));
+	pf2->LoadFromString("Sleep");
 
 	return true;
 }
